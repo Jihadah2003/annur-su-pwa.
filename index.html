@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123d2b">
+  <meta name="description" content="Portal PWA Masjid An Nur Saujana Utama: pengumuman, program, khairat dan sumbangan.">
+  <title>Masjid An Nur Saujana Utama</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#utama" aria-label="Masjid An Nur Saujana Utama, halaman utama">
+      <span class="brand-icon" aria-hidden="true">☾</span>
+      <span><small>PORTAL RASMI</small><strong>Masjid An Nur</strong><em>Saujana Utama</em></span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+    <nav id="main-nav" aria-label="Navigasi utama">
+      <a href="#utama">Utama</a>
+      <a href="#program">Program</a>
+      <a href="#khairat">Khairat</a>
+      <a href="#sumbangan">Sumbangan</a>
+      <a href="#hubungi">Hubungi</a>
+    </nav>
+  </header>
+
+  <main id="utama">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">ASSALAMUALAIKUM WARAHMATULLAHI WABARAKATUH</p>
+        <h1>Masjid sebagai pusat <span>ibadah, ilmu dan kebajikan.</span></h1>
+        <p>Selamat datang ke portal aplikasi Masjid An Nur Saujana Utama. Dapatkan maklumat program, perkhidmatan dan pengumuman masjid di satu tempat.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#program">Lihat program</a>
+          <a class="button button-outline" href="https://sites.google.com/view/annursu/home?authuser=0" target="_blank" rel="noopener">Laman web sedia ada ↗</a>
+        </div>
+      </div>
+      <div class="hero-ornament" aria-hidden="true">
+        <div class="ornament-ring"><span>☾</span><div class="mosque-shape"><i></i><b></b><b></b><b></b></div></div>
+        <p>MEMBINA UMMAH<br><strong>BERSAMA AN NUR</strong></p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="pintasan-title">
+      <div class="section-heading">
+        <div><p class="eyebrow dark-eyebrow">PERKHIDMATAN</p><h2 id="pintasan-title">Pintasan untuk jemaah</h2></div>
+        <p class="section-intro">Maklumat penting, mudah dicapai melalui telefon.</p>
+      </div>
+      <div class="service-grid">
+        <a class="service-card" href="#program"><span class="service-icon">▦</span><strong>Program Masjid</strong><small>Aktiviti, kuliah dan pengumuman</small><span class="card-arrow">→</span></a>
+        <a class="service-card" href="#khairat"><span class="service-icon">♡</span><strong>Khairat Kematian</strong><small>Pendaftaran dan pertanyaan</small><span class="card-arrow">→</span></a>
+        <a class="service-card" href="#sumbangan"><span class="service-icon">✧</span><strong>Sumbangan</strong><small>Saluran sumbangan rasmi</small><span class="card-arrow">→</span></a>
+        <a class="service-card" href="#hubungi"><span class="service-icon">⌖</span><strong>Hubungi Masjid</strong><small>Maklumat dan laman rasmi</small><span class="card-arrow">→</span></a>
+      </div>
+    </section>
+
+    <section class="feature-section" id="program">
+      <div class="section-heading">
+        <div><p class="eyebrow dark-eyebrow">AKTIVITI & MAKLUMAN</p><h2>Program dan pengumuman</h2></div>
+      </div>
+      <div id="announcement-list" class="announcement-grid" aria-live="polite"></div>
+      <p class="admin-note">Maklumat contoh perlu diganti oleh AJK sebelum aplikasi diterbitkan kepada umum.</p>
+      <a class="text-link" href="https://sites.google.com/view/annursu/home?authuser=0" target="_blank" rel="noopener">Semak laman web rasmi untuk maklumat terkini ↗</a>
+    </section>
+
+    <section class="khairat-section" id="khairat">
+      <div class="khairat-copy">
+        <p class="eyebrow gold-eyebrow">BADAN KHAIRAT KEMATIAN</p>
+        <h2>Urusan khairat dengan lebih mudah.</h2>
+        <p>Gunakan pautan borang rasmi untuk pendaftaran ahli atau menghantar pertanyaan kepada petugas yang dilantik.</p>
+        <ul><li>Pendaftaran ahli baharu</li><li>Pertanyaan yuran dan keahlian</li><li>Maklumat untuk dihubungi oleh petugas</li></ul>
+        <p class="privacy-note">Jangan hantar nombor kad pengenalan atau dokumen sensitif melalui pautan yang belum disahkan oleh pihak masjid.</p>
+      </div>
+      <div class="khairat-actions">
+        <a class="button button-gold button-wide" id="khairat-register" href="https://sites.google.com/view/annursu/home?authuser=0" target="_blank" rel="noopener">Borang pendaftaran ahli</a>
+        <a class="button button-light button-wide" id="khairat-enquiry" href="https://sites.google.com/view/annursu/home?authuser=0" target="_blank" rel="noopener">Borang pertanyaan khairat</a>
+        <small>AJK perlu menggantikan pautan contoh ini dengan pautan Google Forms atau borang rasmi yang diluluskan.</small>
+      </div>
+    </section>
+
+    <section class="donation-section" id="sumbangan">
+      <div>
+        <p class="eyebrow dark-eyebrow">SOKONG PEMBANGUNAN MASJID</p>
+        <h2>Sumbangan untuk manfaat ummah.</h2>
+        <p>Salurkan sumbangan melalui saluran rasmi yang disahkan oleh pihak pengurusan Masjid An Nur.</p>
+      </div>
+      <a class="button button-green" id="donation-link" href="https://sites.google.com/view/annursu/home?authuser=0" target="_blank" rel="noopener">Maklumat sumbangan ↗</a>
+    </section>
+
+    <section class="contact-section" id="hubungi">
+      <div>
+        <p class="eyebrow dark-eyebrow">HUBUNGI KAMI</p>
+        <h2>Masjid An Nur Saujana Utama</h2>
+        <p id="contact-copy">Untuk alamat, nombor telefon dan maklumat rasmi, sila rujuk laman web masjid.</p>
+      </div>
+      <a class="button button-green" href="https://sites.google.com/view/annursu/home?authuser=0" target="_blank" rel="noopener">Buka laman rasmi ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><span class="brand-icon">☾</span><span><strong>Masjid An Nur Saujana Utama</strong><small>Memperkukuh ibadah, ilmu dan kebajikan masyarakat.</small></span></div>
+    <p class="footer-small">© <span id="year"></span> Masjid An Nur Saujana Utama · Portal aplikasi PWA</p>
+  </footer>
+
+  <div class="install-banner" id="install-banner" hidden>
+    <span><strong>Pasang aplikasi An Nur</strong><small>Tambah ke skrin utama telefon anda.</small></span>
+    <button class="button button-gold" id="install-button">Pasang</button>
+    <button class="close-install" id="dismiss-install" aria-label="Tutup">×</button>
+  </div>
+  <script src="./config.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
